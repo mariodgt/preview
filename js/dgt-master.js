@@ -4,6 +4,7 @@
   var $textThComplet = 'Page % - LISTINGS % to %'; // Éste es el texto que aparecerá en el separador cuando se cargue más items en la vista mapa, de la página 'Search Results'. Ejm: Page 2 - LISTINGS 25 to 48
   //
   var $cuerpo = $('body');
+  var $holi = true ;
   var $ventana = $(window);
   var $htmlcuerpo = $('html, body');
   // Seleccionador de clases en los filtros.
