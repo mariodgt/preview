@@ -1,0 +1,376 @@
+doctype html
+html(lang='en')
+  head
+    title Page Results | Master Elite 2017
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    //meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no") // analizar lo de 'user-scalable=no'
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="#0073AC")
+    meta(name="theme-color", content="#0073AC")
+    meta(name="msapplication-navbutton-color", content="#0073AC")
+    link(rel="stylesheet", href="../css/main.css")
+    link(rel="stylesheet", href="https://file.myfontastic.com/v6vr22zQVKSnTWTxBBpbWC/icons.css")
+  body.home.page-result
+    include ../header.jade
+    #wrap-filters
+      .gwr
+        ul#filters
+          li.mini-search
+            form(action="#")
+              input(type='search', placeholder="Select Area or Enter City, Zip, Condo Name or Keyword")#autocomplete-ajax
+              #submit-ms.icon-search
+                input(type="submit", value="Submit")
+            #search-suggestions
+              ul
+                li(data-slug='Aventura|city') Aventura
+                li(data-slug='Bal Harbour|city') Bal Harbour
+                li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                li(data-slug='Brickell|city') Brickell
+                li(data-slug='Brickell Key|city') Brickell Key
+                li(data-slug='Coconut Grove|city') Coconut Grove
+                li(data-slug='Coral Gables|city') Coral Gables
+                li(data-slug='Fisher Island|city') Fisher Island
+                li(data-slug='Hollywood|city') Hollywood
+                li(data-slug='Indian Creek|city') Indian Creek
+                li(data-slug='Key Biscayne|city') Key Biscayne
+                li(data-slug='Miami|city') Miami
+                li(data-slug='Miami Beach|city') Miami Beach
+                li(data-slug='Miami Shores|city') Miami Shores
+                li(data-slug='North Miami|city') North Miami
+                li(data-slug='North Miami Beach|city') North Miami Beach
+                li(data-slug='Pembroke Pines|city') Pembroke Pines
+                li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                li(data-slug='Surfside|city') Surfside
+            #autocomplete-matches
+              ul
+                li(data-slug='Aventura|city') Aventura
+                li(data-slug='Bal Harbour|city') Bal Harbour
+                li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                li(data-slug='Brickell|city') Brickell
+                li(data-slug='Brickell Key|city') Brickell Key
+                li(data-slug='Coconut Grove|city') Coconut Grove
+                li(data-slug='Coral Gables|city') Coral Gables
+                li(data-slug='Fisher Island|city') Fisher Island
+                li(data-slug='Hollywood|city') Hollywood
+                li(data-slug='Indian Creek|city') Indian Creek
+                li(data-slug='Key Biscayne|city') Key Biscayne
+                li(data-slug='Miami|city') Miami
+                li(data-slug='Miami Beach|city') Miami Beach
+                li(data-slug='Miami Shores|city') Miami Shores
+                li(data-slug='North Miami|city') North Miami
+                li(data-slug='North Miami Beach|city') North Miami Beach
+                li(data-slug='Pembroke Pines|city') Pembroke Pines
+                li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                li(data-slug='Surfside|city') Surfside
+          li.price
+            button 
+              span.icon-arrow-select Any Price
+          li.beds
+            button 
+              span.icon-arrow-select Beds
+          li.baths
+            button 
+              span.icon-arrow-select Baths
+          li.type
+            button 
+              span.icon-arrow-select Single Family
+          li.all
+            button
+              span.icon-arrow-select All filters
+          li.save
+            strong#properties-found
+              span 36,324
+              | Properties
+            button
+              span Save search
+        #all-filters
+          ul#mini-filters
+            li.cities
+              .gwr
+                h4.icon-arrow-select Choose cities
+                  span Aventura
+                .wrap-item
+                  #cities-list
+                    ul
+                      li(data-slug='Aventura|city') Aventura
+                      li(data-slug='Bal Harbour|city') Bal Harbour
+                      li(data-slug='Bay Harbor Islands|city') Bay Harbor Islands
+                      li(data-slug='Biscayne Park|city') Biscayne Park
+                      li(data-slug='Brickell|city') Brickell
+                      li(data-slug='Brickell Key|city') Brickell Key
+                      li(data-slug='Coconut Grove|city') Coconut Grove
+                      li(data-slug='Coral Gables|city') Coral Gables
+                      li(data-slug='Cutler Bay|city') Cutler Bay
+                      li(data-slug='Doral|city') Doral
+                      li(data-slug='Eastern Shores|city') Eastern Shores
+                      li(data-slug='El Portal|city') El Portal
+                      li(data-slug='Fisher Island|city') Fisher Island
+                      li(data-slug='Florida City|city') Florida City
+                      li(data-slug='Fort Lauderdale|city') Fort Lauderdale
+                      li(data-slug='Golden Beach|city') Golden Beach
+                      li(data-slug='Goulds|city') Goulds
+                      li(data-slug='Hialeah Gardens|city') Hialeah Gardens
+                      li(data-slug='Hollywood|city') Hollywood
+                      li(data-slug='Homestead|city') Homestead
+                      li(data-slug='Indian Creek|city') Indian Creek
+                      li(data-slug='Kendall|city') Kendall
+                      li(data-slug='Key Biscayne|city') Key Biscayne
+                      li(data-slug='Medley|city') Medley
+                      li(data-slug='Miami|city') Miami
+                      li(data-slug='Miami Beach|city') Miami Beach
+                      li(data-slug='Miami Gardens|city') Miami Gardens
+                      li(data-slug='Miami Lakes|city') Miami Lakes
+                      li(data-slug='Miami Shores|city') Miami Shores
+                      li(data-slug='Miami Springs|city') Miami Springs
+                      li(data-slug='North Bay Village|city') North Bay Village
+                      li(data-slug='North Miami|city') North Miami
+                      li(data-slug='North Miami Beach|city') North Miami Beach
+                      li(data-slug='Opa-Locka|city') Opa-Locka
+                      li(data-slug='Palmetto Bay|city') Palmetto Bay
+                      li(data-slug='Pembroke Pines|city') Pembroke Pines
+                      li(data-slug='Pinecrest|city') Pinecrest
+                      li(data-slug='South Miami|city') South Miami
+                      li(data-slug='Sunny Isles Beach|city') Sunny Isles Beach
+                      li(data-slug='Surfside|city') Surfside
+                      li(data-slug='Sweetwater|city') Sweetwater
+                      li(data-slug='Virginia Gardens|city') Virginia Gardens
+                      li(data-slug='West Miami|city') West Miami
+            li.price
+              .gwr
+                h4.icon-arrow-select Price Range
+                .wrap-item          
+                  .wrap-inputs
+                    input(id="price_from", type='text', name='', value="$0")
+                    span to
+                    input(id="price_to", type='text', name='', value="$50,000,000")
+                  .wrap-range
+                    #range-price.range-slide
+                  span.direct-results 4,109 Properties
+            li.baths
+              .gwr
+                h4.icon-arrow-select Bathrooms
+                .wrap-item
+                  .wrap-range
+                    #range-baths.range-slide
+                  ul.markers-range
+                    each bath, a in ['Any', 'Studio', '1', '2', '3', '4', '5', '+']
+                      li #{bath}
+                  span.direct-results 4,109 Properties
+            li.beds
+              .gwr
+                h4.icon-arrow-select Bedrooms
+                .wrap-item
+                  .wrap-range
+                    #range-beds.range-slide
+                  ul.markers-range
+                    each beds, e in ['Any', 'Studio', '1', '1.5', '2', '2.5', '3', '3.5', '4', '4.5', '5', '5.5', '+']
+                      li #{beds}
+                  span.direct-results 4,109 Properties  
+            li.type
+              .gwr
+                h4.icon-arrow-select Property type
+                .wrap-item
+                  .wrap-checks
+                    ul
+                      li
+                        input(type='checkbox', value='', id="first")
+                        label(for="first") Single Family Home
+                      li
+                        input(type='checkbox', value='', id="second")
+                        label(for="second") Condo / Townhome
+                      li
+                        input(type='checkbox', value='', id="third")
+                        label(for="third") Vacant Land
+            li.living
+              .gwr
+                h4.icon-arrow-select Living size
+                .wrap-item
+                  .wrap-inputs
+                    input(id="living_from", type='text', name='', value="0 SF")
+                    span to
+                    input(id="living_to", type='text', name='', value="9,000 SF")
+                  .wrap-range
+                    #range-living.range-slide
+            li.year
+              .gwr
+                h4.icon-arrow-select Year Built
+                .wrap-item
+                  .wrap-inputs
+                    input( id="year_from", type='text', name='', value="1961")
+                    span to
+                    input( id="year_to", type='text', name='', value="2021")
+                  .wrap-range
+                    #range-year.range-slide
+            li.waterfront
+              .gwr
+                h4.icon-arrow-select Waterfront description
+                .wrap-item
+                  .wrap-select.icon-arrow-select
+                    select
+                      each waterfront , w in ["Any", "Bay Front", "Canal", "Fixed Bridge", "Intracoastal", "Lake front", "Ocean acces", "Ocean Front", "Point lot", "River front"]
+                        option(value='') #{waterfront}
+            li.parking
+              .gwr
+                h4.icon-arrow-select Parking spaces
+                .wrap-item
+                  .wrap-select.icon-arrow-select
+                    select
+                      option(value='0') Any
+                      - for(p = 1; p < 4; p++)
+                        option(value='#{p}') #{p}
+                      option(value='+') 4+
+            li.features
+              .gwr
+                h4.icon-arrow-select Features
+                .wrap-item
+                  .wrap-checks
+                    ul
+                      li
+                        input(type='checkbox', value='', id="check1")
+                        label(for="check1") Waterfront
+                      li
+                        input(type='checkbox', value='', id="check2")
+                        label(for="check2") Ocean Acces
+                      li
+                        input(type='checkbox', value='', id="check3")
+                        label(for="check3") Ocean Views
+                      li
+                        input(type='checkbox', value='', id="check4")
+                        label(for="check4") Tennis Courts
+                      li
+                        input(type='checkbox', value='', id="check5")
+                        label(for="check5") Swimming Poll
+                      li
+                        input(type='checkbox', value='', id="check6")
+                        label(for="check6") Golf Course
+                      li
+                        input(type='checkbox', value='', id="check7")
+                        label(for="check7") Guest House
+                      li
+                        input(type='checkbox', value='', id="check8")
+                        label(for="check8") Boat Dock
+                      li
+                        input(type='checkbox', value='', id="check9")
+                        label(for="check9") Covered Parking
+                      li
+                        input(type='checkbox', value='', id="check10")
+                        label(for="check10") Bated Community
+          button#apply-filters: span Apply Filters
+    #wrap-subfilters
+      .gwr
+        span#title-subfilters
+          span Villa, Condo, Twnhouse in Fl from $100,000 to $1,500,000
+        ul#sub-filters
+          li#link-favorites
+            a(href="#", title="#").icon-favorite
+              span
+                span 0
+                | Favorites
+          li.icon-arrow-select#filter-by
+            select
+              option(value="price-desc") Highest Price
+              option(value="price-asc") Lowest Price
+              option(value="bed-desc") Beds High to Low
+              option(value="bed-asc") Beds Low to High
+              option(value="size-desc") Size High to Low
+              option(value="size-asc") Size Low  to High 
+              option(value="year-newest") Year Newest
+              option(value="year-oldest") Year Oldest
+              option(value="newest-listed") Newest Listed
+              option(value="oldest-listed") Oldest Listed
+              option(value="#", selected="selected") Newest First
+          li.icon-arrow-select.grid#filter-views
+            select
+              option(value="grid", selected="selected") Grid
+              option(value="list") List
+              option(value="map") Map
+        span#info-subfilters Showing 6 of 43 Properties.
+          span Scroll down for more.
+    section#wrap-result.view-grid
+      h2.title Search results
+      .gwr
+        #wrap-list-result
+          ul#head-list
+            li.address Address
+            li.price Asking Price
+            li.pr % / $
+            li.beds Beds
+            li.baths Baths
+            li.living-size Living Size
+            li.price-sf Price / SF 
+            li.build-year Year built
+            li.development Development / Subdivision
+          ul#result-search
+            - for(b = 0; b < 24; b++)
+                - var price = Math.floor(Math.random() * 101)
+                li.propertie(data-id='343278191', data-mls='A10172834', data-counter='10')
+                  h2(title="Nombre completo de la dirección")
+                    span 151012 Collins Avenue Suit
+                  ul.features
+                    li.address Miami, FL 33145
+                    li.price $#{price},000,000
+                    li.pr.down 2.05%
+                    li.beds 10  
+                      span Beds 
+                    li.baths 8 
+                      span Baths 
+                    li.living-size 
+                      span 2,534
+                      | SF 
+                      span (452 m2)
+                    li.price-sf
+                      span $345 
+                      | / SF
+                      span ($244 m2)
+                    li.type: span.icon-map Davis citrus Farms
+                    li.build-year
+                      span Built 
+                      | 2015
+                    li.development: span Star Island Corr
+                  .wrap-slider
+                    ul
+                      li
+                        img(src="#" data-src='../images/propiertie.jpg', title='#', alt='#')
+                    button.prev: span.icon-arrow-select
+                    button.next: span.icon-arrow-select
+                  button.btn-check: span.icon-check
+                  a(href="#").view-detail View detail 
+          nav#nav-results
+            span#indicator Pag 1 of 467
+            a(href="#", title="First Page")#firstp.ad.visible
+              span.icon-arrow-select
+              span.icon-arrow-select
+              span First page
+            a(href="#", title="Prev Page")#prevn.arrow.icon-arrow-select.prevn.visible
+              span Previus page
+            ul#principal-nav
+              li: a(href='#') 1
+              li: a(href='#') 2
+              li.active: a(href='#') 3
+              li: a(href='#') 4
+              li: a(href='#') 5
+              li: a(href='#') 6
+              li: a(href='#') 7
+            span.points ...
+            ul#complementary-nav
+              li: a(href='#') 20
+              li: a(href='#') 30
+              li: a(href='#') 40
+            span.points ...
+            a(href="#", title="Prev Page")#nextn.arrow.icon-arrow-select.nextn.visible
+              span Next page
+            a(href="#", title="First Page")#lastp.ad.visible
+              span.icon-arrow-select
+              span.icon-arrow-select
+              span Last page
+        #wrap-map
+          #code-map
+            iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28742.90968747849!2d-80.20231346071917!3d25.77506484106738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C+Florida!5e0!3m2!1ses!2s!4v1490883858310", allowfullscreen)
+    include ../footer.jade
+    script(type="text/javascript", src="../js/jquery-3.1.1.min.js")
+    script(type="text/javascript", src="../js/plugins/perfect-scrollbar.jquery.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery-ui.min.js")
+    script(type="text/javascript", src="../js/plugins/jquery.ui.touch-punch.min.js")
+    script(type="text/javascript", src="../js/dgt-master.min.js")
+    

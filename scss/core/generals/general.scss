@@ -1,0 +1,237 @@
+html{
+	height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: #fff;
+	color: $colortext;
+	font-size: 16px;
+	font-family: $OpenSans;
+	position: relative;
+	width: 100%;
+  min-height: 100vh;
+
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction: column;
+
+  > * {
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+/* Clases generales para General Width Relative */
+.gwr{
+	max-width: 1431px;
+	width: 92%;
+	margin-left:auto;
+	margin-right: auto;
+}
+@media screen and (min-width: 640px) {
+	.gwr {
+		width: 94%;
+	}	
+}
+@media screen and (min-width: 960px) {
+	.gwr {
+	    width: 96%;
+  	}
+}
+@media screen and (min-width: 1280px) { 
+	.gwr {
+    	width: 97%;
+  	}
+}
+
+.icon-favorite {
+  &:before {
+    content: "\62" !important;
+  }
+
+  &.active {
+    &:before {
+      content: "\66" !important;
+    }
+  }
+}
+
+.icon-arrow-select {
+  &:before {
+    content: "\63" !important;
+  }
+}
+
+.icon-check {
+  &:before {
+    content: "\62" !important;
+  }
+
+  &.active {
+    &:before {
+      content: "\66" !important;
+    }
+  }
+}
+
+.grid, .list, .map {
+  &:after {
+    font-family: "master-elite-2017" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.grid {
+  &:after {
+    content: "\64";
+  }
+}
+
+.list {
+  &:after {
+    content:"\65";
+  }
+}
+
+.map {
+  &:after {
+    content:"\68";
+  }
+}
+
+
+.loading {
+  &:before{
+    content:"";
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    margin:auto;
+    width: 50px;
+    height: 50px;
+    background-color: $colorweb;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      background-color: $colorweb;
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      background-color: $colorhover;
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      background-color: $colorweb;
+    }
+  }
+}
+/* Clases generales de Benjamin */
+
+.lazy-img{
+	transition: all .3s ease-in-out;
+	opacity: 0;
+	&.active{
+		opacity: 1;
+	}
+}
+
+.btn {
+    background-color: #ccc;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.75rem;//12px;
+    font-weight: 700; //bold
+    line-height: 1.42857143;
+    margin-bottom: 0;
+    padding: 8px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.btn-green{
+	background-color: #8dc24e;
+	color: #FFF;
+	&:hover,
+	&:focus,
+	&:active,
+	&.active{
+		background-color: #659928;
+	}
+}
+
+.btn-blue{
+	background-color: #0072ac;
+	color: #FFF;
+	&:hover,
+	&:focus,
+	&.active{
+		background-color: #333;
+	}
+}
+// Color de Perfect Scroll Bar
+.ps-container {
+  > .ps-scrollbar-y-rail {
+    opacity: .6 ;
+
+    > .ps-scrollbar-y {
+      background-color:$colorweb;
+      top:0 ;
+    }
+
+    &:hover {
+      cursor:pointer;
+
+      > .ps-scrollbar-y {
+        background-color:$colorweb;
+      }
+
+    }
+  }
+
+  &:hover {
+    > .ps-scrollbar-y-rail {
+      //opacity: 1; // a analizar...
+      &:hover {
+        >.ps-scrollbar-y {
+          background-color:$colorweb;
+        }
+      }
+    }
+
+    &.ps-in-scrolling.ps-y  {
+      > .ps-scrollbar-y-rail {
+        > .ps-scrollbar-y {
+          background-color:$colorweb;
+        }
+      }
+    }
+  }
+
+  &.ps-active-y {
+    > .ps-scrollbar-y-rail {
+      height: 100% !important;
+    }
+  }
+}

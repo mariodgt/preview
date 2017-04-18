@@ -1,0 +1,576 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title Neighborhoods | Master Elite 2017
+	body.property-details
+		include ../header.jade
+		#full-main
+			section.title-conteiner.gwr
+				h1.title-page 3085 Munroe Drive
+					span Biscayne Camp • Coconut Grove, Miami, FL, 33133
+				.breadcrumb-options
+					a(href="#", title="call us 305 755 6354").btn.btn-green call us 305 755 6354
+					ul.nav-links
+						li: a(href="#", title="Miami Beach") Miami Beach
+						li: a(href="#", title="33139") 33139
+						li: a(href="#", title="Flamingo Lummus") Flamingo Lummus
+						li: a(href="#", title="710 Washington Avenue") 710 Washington Avenue
+						li: a(href="#", title="Apartment 203") Apartment 203
+			.header-print
+				img(src="../images/logo-tremgroup.png", title="Tremgroup")
+				ul
+					li Call me: (305) 705 - 5000
+					li info@tremgroup.com
+			#imagen-print
+			#full-slider
+				#content-slider
+					ul#slider-properties.owl-carousel.owl-theme
+						li: img(data-src="../images/properties.jpg", title="Demo city", alt="Demo city").owl-lazy
+						li: img(data-src="../images/properties.jpg", title="Demo city", alt="Demo city").owl-lazy
+						li: img(data-src="../images/properties.jpg", title="Demo city", alt="Demo city").owl-lazy
+						li: img(data-src="../images/properties.jpg", title="Demo city", alt="Demo city").owl-lazy
+						li: img(data-src="../images/properties.jpg", title="Demo city", alt="Demo city").owl-lazy
+						li: img(data-src="../images/properties.jpg", title="Demo city", alt="Demo city").owl-lazy
+						li: img(data-src="../images/properties.jpg", title="Demo city", alt="Demo city").owl-lazy
+
+					#nav-buttons-properties
+						button.next
+						button.prev
+
+					#nav-thumbs-properties
+						#nav-thumbs-buttons-properties
+							button.next
+							button.prev
+
+				.moptions
+					ul.slider-option
+						li
+							button#show-gallery.option-switch(data-view="gallery") photos
+						li
+							button#show-map.option-switch(data-view="map") map view
+					#min-map(data-map-img="https://maps.googleapis.com/maps/api/staticmap?center=26.1151040,-80.1207070&zoom=14&size=163x87&maptype=roadmap&scale=false&format=png&key=AIzaSyBbcWAf3LnqNPxdZ5TP5resRxl3I3BPZb8&visual_refresh=true&markers=size:mid%7Ccolor:0x0684c8%7Clabel:%7C26.1151040,-80.1207070")
+					button.full-screen#btn-flight Full screen
+				#map-view
+					#map-result(data-lat="26.1151040", data-lng="-80.1207070")
+			section.main
+				h2.title-temp Property details information
+				.temporal-content
+				.gwr
+					.container
+						ul.property-information
+							li $5,900,000 
+								span listing price 
+									span.up-price 2.1%
+							li 3 
+								span Bedrooms
+							li 2 
+								span Bathrooms
+							li 1 
+								span Halfs Baths
+							li 15,930 
+								span size sq.ft
+							li
+								label(for="chk_save").chk_save
+									input(type="checkbox", value="1", id="chk_save")
+									span(for="chk_save")
+									|save favorite		
+
+						.panel-options
+							a(href="#", title="Schedule a showing now").btn.btn-blue#schedule-now Schedule a showing now
+							
+							.options-list
+								.shared-content
+									button#show-shared share
+									ul.shared-list
+										li: a(href="#", title="Faceboook").ico-facebook Faceboook
+										li: a(href="#", title="Twitter").ico-twitter Twitter
+										li: a(href="#", title="Youtube").ico-youtube Youtube
+										li: a(href="#", title="Instagram").ico-instagram Instagram
+								ul.action-list
+									li: a(href="#", title="mortgage calculator")#calculator-mortgage.ico-calculator mortgage calculator
+									li: a(href="#", title="email to a firend")#email-friend.ico-envelope email to a friend
+									li: a(href="#", title="print")#print-btn.ico-printer print
+						
+						.main-content
+							.property-description#property-description
+								p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+							
+							.list-details
+								h2.title-details Property Details
+								ul.list-detail
+									li  
+										span Property Type 
+										span Single Family Home
+									li  
+										span Waterfront
+										span Yes
+									li
+										span Swimming Pool
+										span Yes
+									li
+										span Style
+										span Ocean Access
+									li
+										span Construction
+										span CBS Construction
+									li
+										span Parking
+										span Yes
+									li
+										span Parking Spaces
+										span 2
+									li
+										span Flooring Type
+										span Flooring Type
+									li
+										span MLS
+										span WOOD FLOORS,MARBLE...
+									li
+										span Status
+										span Active
+									li
+										span Sale Type
+										span Regular Sale
+									li
+										span Date Listed
+										span 05/12/2005
+									li
+										span Days on Market
+										span 360
+									li
+										span Furnished
+										span Furnished
+									li
+										span Subdivision
+										span Cocoplum
+									li
+										span HOA Fees
+										span $122
+									li
+										span Taxes
+										span $387,233
+									li
+										span Taxes Year
+										span 2014
+							.list-details
+								h2.title-amenities Amenities
+								ul.list-amenities
+									li Below Ground Pool
+									li Boat Lift
+									li Central AC
+									li Breakfast Nook
+									li Media / Recreation Room
+									li Private dock
+									li Dishwasher
+									li Butlers Pantry
+									li Formal Dining Room
+									li Waterfront
+									li Microwave
+									li Fireplace
+									li Library / Den
+									li Water Views
+									li Gas Stove
+									li Wet Bar
+									li Dryer
+									li Detached Parking
+									li Refrigerator
+									li Hardwood Floors
+									li Washer
+									li Pool
+									li Eat-in Kitchen
+									li Marble Floors
+							#content-map
+								#map(data-lat="26.1151040", data-lng="-80.1207070")
+
+							.property-contact
+								.form-content.large-form
+									.avatar-content
+										.content-avatar-image
+											img(data-src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img
+										.avatar-information
+											a(href="#",title="More Information").view-more More Information
+											h2 John Smith
+											a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+									form(action="", method="POST", id="form-request")
+										h2 Contact us for more details about 3254 Collins Ave, Suite 435
+										.gform_body
+											ul.gform_fields
+												li.gfield
+													label.gfield_label Name
+													.ginput_container.ginput_container_text
+														input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+												li.gfield
+													label.gfield_label Email
+													.ginput_container.ginput_container_email
+														input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+												li.gfield
+													label.gfield_label Phone
+													.ginput_container.ginput_container_email
+														input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+												li.gfield.comments
+													label.gfield_label Comments
+													.ginput_container
+														textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+												li.gfield.requiredFields * Required Fields
+												.gform_footer
+													input(type="submit", id="gform_submit_button_5", value="Submit").gform_button.button 
+
+								.info-content
+									p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+									span IDX by: 
+										a(href="#", title="FLEXIDX") FLEXIDX
+
+								.content-table
+									h2.title-table Price History
+									table.table
+										thead
+											tr
+												th Date
+												th Event
+												th Price
+												th $/SQFT
+												th.flag-icon Source
+										tbody
+											tr
+												td 03/13/17
+												td Listed for sale
+												td
+													label Price
+													|$149,000
+													span.rand-price.down -21.2%
+												td 
+													label $/SQFT
+													|$372
+												td.flag-icon  
+													label Source
+													.ellipsis Douglas Ellimalorem ipsum
+											tr
+												td 03/02/15
+												td Listed for sale
+												td
+													label Price
+													|$179,000
+												td 
+													label $/SQFT
+													|$472
+												td.flag-icon  
+													label Source
+													.ellipsis Douglas Ellimalorem ipsum
+											tr
+												td 08/18/14
+												td Listed for sale
+												td
+													label Price
+													|$189,000
+												td 
+													label $/SQFT
+													|$472
+												td.flag-icon 
+													label Source
+													.ellipsis Douglas Ellimalorem ipsum
+									a(href="javascript:void(0)", title="Show more").more-results More
+
+								
+								.content-table
+									h2.title-table Tax History
+									p Find assessor information on the
+										a(href="#", title="country website") country website
+									table.table
+										thead
+											tr
+												th Year
+												th Property Taxes
+												th Change
+												th Tax Assessment
+												th Change
+										tbody
+											tr
+												td 2015
+												td $2,188
+												td
+													label Change
+													span.rand-price.up +4.6%
+												td 
+													label Tax Assessment
+													|$96,110
+												td 
+													label Change
+													span.rand-price.up +10.0%
+											tr
+												td 2014
+												td $2,092
+												td
+													label Change
+													span.rand-price.up +29.5%
+												td 
+													label Tax Assessment
+													|$87,373
+												td 
+													label Change
+													span.rand-price.up +10.0%
+											tr
+												td 2013
+												td $1,615
+												td
+													label Change
+													span.rand-price.up +4.7%
+												td 
+													label Tax Assessment
+													|$79,430
+												td 
+													label Change
+													span --
+									a(href="javascript:void(0)", title="Show more").more-results More
+					.aside
+						.form-content
+							.avatar-content
+								.content-avatar-image
+									img(data-src="../images/avatar.jpg", title="John Smith", alt="John Smith").lazy-img
+								.avatar-information
+									h2 John Smith
+									a(href="tel:305.555.3256", title="Call to 305.555.3256").phone-avatar Ph. 305.555.3256
+									a(href="#",title="More Information").view-more More Information
+							form(action="", method="POST", id="form-request")
+								.gform_body
+									ul.gform_fields
+										li.gfield
+											label.gfield_label Name
+											.ginput_container.ginput_container_text
+												input(name="input_1", id="", type="text", value="", placeholder="Full Name*").medium
+										li.gfield
+											label.gfield_label Email
+											.ginput_container.ginput_container_email
+												input(name="input_2", id="", type="email", value="", placeholder="Email*").medium
+										li.gfield
+											label.gfield_label Phone
+											.ginput_container.ginput_container_email
+												input(name="input_3", id="", type="text", value="", placeholder="Phone*").medium
+										li.gfield.comments
+											label.gfield_label Comments
+											.ginput_container
+												textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+										li.gfield.requiredFields * Required Fields
+										.gform_footer
+											input(type="submit", id="gform_submit_button_5", value="Request info").gform_button.button 
+
+						.info-content
+							p 1 Casuarina, a 3.6 acre Mediterranean-inspired estate situated in the exclusive gated Gables Estates. Enjoy maximum privacy on this corner double lot with 937' of waterfrontage. Exquisite views of Biscayne Bay, Miami Skyline & the ocean. Grand elegant interiors reveal exceptional craftsmanship w/ 3 fully finished levels of living space. This 9BR/10+5BA oasis is an entertainer's dream, w/ resort like amenities: gym, game room, nanny's quarters, tennis court, pool, guest house, private beach & boat dock.
+							span IDX by: 
+								a(href="#", title="FLEXIDX") FLEXIDX
+
+						.similar-properties
+							h2.title-similar-list Similar Properties For Sale
+							article
+								h2 
+									a(href="#", title="1 Casuarina Concorse") 1 Casuarina Concorse
+										span Miami Beach, FL 33139
+								ul
+									li.price $65,000,000
+									li 
+										span 4 
+										|Beds
+									li 
+										span 3 
+										|Baths
+									li 
+										span 10,547 
+										|SqFt
+								a(href="#", title="1 Casuarina Concorse").layout-img
+									img(data-src="../images/minproperties.jpg", title="1 Casuarina Concorse", alt="1 Casuarina Concorse").lazy-img
+								a(href="#", title="1 Casuarina Concorse").full-link 1 Casuarina Concorse
+							article
+								h2 
+									a(href="#", title="1 Casuarina Concorse") 1 Casuarina Concorse
+										span Miami Beach, FL 33139
+								ul
+									li.price $65,000,000
+									li 
+										span 4 
+										|Beds
+									li 
+										span 3 
+										|Baths
+									li 
+										span 10,547 
+										|SqFt
+								a(href="#", title="1 Casuarina Concorse").layout-img
+									img(data-src="../images/minproperties.jpg", title="1 Casuarina Concorse", alt="1 Casuarina Concorse").lazy-img
+								a(href="#", title="1 Casuarina Concorse").full-link 1 Casuarina Concorse
+							article
+								h2 
+									a(href="#", title="1 Casuarina Concorse") 1 Casuarina Concorse
+										span Miami Beach, FL 33139
+								ul
+									li.price $65,000,000
+									li 
+										span 4 
+										|Beds
+									li 
+										span 3 
+										|Baths
+									li 
+										span 10,547 
+										|SqFt
+								a(href="#", title="1 Casuarina Concorse").layout-img
+									img(data-src="../images/minproperties.jpg", title="1 Casuarina Concorse", alt="1 Casuarina Concorse").lazy-img
+								a(href="#", title="1 Casuarina Concorse").full-link 1 Casuarina Concorse
+							article
+								h2 
+									a(href="#", title="1 Casuarina Concorse") 1 Casuarina Concorse
+										span Miami Beach, FL 33139
+								ul
+									li.price $65,000,000
+									li 
+										span 4 
+										|Beds
+									li 
+										span 3 
+										|Baths
+									li 
+										span 10,547 
+										|SqFt
+								a(href="#", title="1 Casuarina Concorse").layout-img
+									img(data-src="../images/minproperties.jpg", title="1 Casuarina Concorse", alt="1 Casuarina Concorse").lazy-img
+								a(href="#", title="1 Casuarina Concorse").full-link 1 Casuarina Concorse
+							a(href="#", title="view more properties").show-more view more properties
+		#modal_email_to_friend.overlay_modal
+			.modal_cm
+				button.close Close
+				.content_md
+					.heder_md
+						h2 Email to a friend
+					.body_md
+						p Recomend this to a friend, just enter their email below...
+						.form_content
+							form(action="", method="POST", id="form-email-friend")
+								.gform_body
+									ul.gform_fields
+										li.gfield
+											label.gfield_label Friend email
+											.ginput_container.ginput_container_email
+												input(name="input_1", id="", type="email", value="", placeholder="Friend email*").medium
+										li.gfield
+											label.gfield_label Friend name
+											.ginput_container.ginput_container_email
+												input(name="input_2", id="", type="text", value="", placeholder="Friend name*").medium
+										li.gfield
+											label.gfield_label My name
+											.ginput_container.ginput_container_email
+												input(name="input_3", id="", type="text", value="", placeholder="My name*").medium
+										li.gfield
+											label.gfield_label My email
+											.ginput_container.ginput_container_email
+												input(name="input_4", id="", type="email", value="", placeholder="Friend email*").medium
+										li.gfield.comments
+											label.gfield_label Comments
+											.ginput_container
+												textarea(name="input_5", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+										li.gfield.requiredFields * Required Fields
+										.gform_footer
+											input(type="submit", id="gform_submit_button_6", value="Submit").gform_button.button
+		#modal_schedule.overlay_modal
+			.modal_cm
+				button.close Close
+				.content_md
+					.heder_md
+						h2 Schedule a showing
+					.body_md
+						p Let’s us know the best time for showing.
+						ul.contact-opt
+							li: a(href="tel:3057055000") (305) 705 - 5000
+							li: a(href="mailto:info@tremgroup.com") info@tremgroup.com
+						.msg 441 Dilido Island, Miami Beach Fl 33145
+						.form_content
+							form(action="", method="POST", id="form-schedule")
+								.gform_body
+									ul.gform_fields
+										li.gfield.field_sublabel_below Prefered Time and Date
+										li.gfield
+											label.gfield_label Prefered Time and Date
+											.ginput_container.ginput_container_email
+												select.medium
+													option 10:00 AM
+													option 11:00 AM
+										li.gfield
+											label.gfield_label Prefered Time and Date
+											.ginput_container.ginput_container_email
+												select.medium
+													option 10:00 AM
+													option 11:00 AM
+										li.gfield.field_sublabel_below Alternate Time and Date
+										li.gfield
+											label.gfield_label Prefered Time and Date
+											.ginput_container.ginput_container_email
+												select.medium
+													option 10:00 AM
+													option 11:00 AM
+										li.gfield
+											label.gfield_label Prefered Time and Date
+											.ginput_container.ginput_container_email
+												select.medium
+													option 10:00 AM
+													option 11:00 AM
+										li.gfield.field_sublabel_below Comments
+										li.gfield.comments
+											label.gfield_label Comments
+											.ginput_container
+												textarea(name="input_4", id="", type="text", value="", placeholder="Comments", rows="10", cols="50").medium.textarea
+										.gform_footer
+											input(type="submit", id="gform_submit_button_5", value="Submit").gform_button.button
+		#modal_calculator.overlay_modal
+			.modal_cm
+				button.close Close
+				.content_md
+					.heder_md
+						h2 Mortgage calculator
+					.body_md
+						p Contact us for personalized assitance.
+						ul.contact-opt
+							li: a(href="tel:3057055000") (305) 705 - 5000
+							li: a(href="mailto:info@tremgroup.com") info@tremgroup.com
+						.form_content
+							form(action="", method="POST", id="form-calculator")
+								.gform_body
+									ul.gform_fields
+										li.gfield
+											label.gfield_label Purchase Price
+											.ginput_container.ginput_container_email
+												input(name="input_1", id="", type="text", value="", placeholder="$ 410,000").medium
+										li.gfield
+											label.gfield_label % Down Payment
+											.ginput_container.ginput_container_email
+												input(name="input_2", id="", type="text", value="", placeholder="20").medium
+										li.gfield
+											label.gfield_label Term
+											.ginput_container.ginput_container_email
+												select.medium
+													option 30 Years
+													option 20 Years
+										li.gfield
+											label.gfield_label Interest Rate
+											.ginput_container.ginput_container_email
+												input(name="input_3", id="", type="text", value="", placeholder="4.25").medium
+						.detail-mortgage
+							h3 Mortgage breakdown
+							ul
+								li
+									span Mortgage Amount
+									span.text-bold $328,000.00
+								li
+									span Down Payment Amount
+									span.text-bold $82,000.00
+								li.line-top
+									span Mortgage Amount
+									span.text-bold.mtotal $328,000.00
+		#printMessageBox Please wait while we create your document
+		include ../footer.jade
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbcWAf3LnqNPxdZ5TP5resRxl3I3BPZb8&#038")
+		script(src="../js/plugins/jquery.PrintArea.js")
+		script(src="../js/plugins/owl.carousel.min.js")
+		script(src="../js/plugins/properties-js.js")
+		script(src="../js/main.js")

@@ -1,0 +1,35 @@
+#header{
+	h1{
+		font-size: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+	.wrap-options{
+		height: 28px;
+		.gwr{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%;
+		}
+	}
+	.wrap-menu{
+		color: #fff;
+	}
+	
+	#user-options{
+		display: flex;
+		order: 3;
+	}
+	#hamburger{
+			
+	}
+}
+	
+.social-networks{
+			
+}
+
+#available-languages{
+	order: 2;
+}
