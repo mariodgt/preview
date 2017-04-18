@@ -1,0 +1,7 @@
+#ignorar los directorios siguientes
+
+css/
+
+scss/main.scss
+
+!.gitignore
